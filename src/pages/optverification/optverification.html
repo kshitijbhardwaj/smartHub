@@ -1,0 +1,38 @@
+<!--
+  Generated template for the OptverificationPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title></ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="cards-bg">
+
+  <ion-card style="background: rgba(62,239,242,0.73);">
+
+    <img src="https://cdn2.iconfinder.com/data/icons/luchesa-part-3/128/SMS-512.png"  style="width:80px; height:80px;margin:1rem auto;"><br>
+
+    <ion-card-content>
+      <ion-card-title>
+        Verify your mobile number
+      </ion-card-title>
+      <p>
+        An OTP has been sent to your Mobile Number. Please enter the 4 digit OTP below.
+      </p><br>
+      <ion-grid >
+        <ion-row>
+        <ion-col center text-center>
+          <ion-item>
+            <ion-input type="text" placeholder="Enter your OTP number"></ion-input>
+          </ion-item><br>
+          <button ion-button full (click)="verifyOtp()">Verify</button><br><br>
+          <label >Did not get OTP? <a><b>Resend</b></a></label>
+        </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+  </ion-card>
